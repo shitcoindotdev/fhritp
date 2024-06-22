@@ -18,23 +18,12 @@ function App() {
 
   const audioSrc = soundclip;
   const audioRef = useRef(null);
-  const videoRef = useRef(null);
 
   const handleClick = () => {
     if (audioRef.current) {
       audioRef.current.play();
     }
   };
-
-  const handleVideo = () => {
-    if (videoRef.current) {
-      videoRef.current.play();
-    }
-  };
-
-  useEffect(() => {
-    handleVideo();
-  }, []);
 
   return (
     <>
@@ -51,7 +40,6 @@ function App() {
                 onClick={handleClick}
               >
                 <video
-                  ref={videoRef}
                   className="rounded-xl"
                   src={videoClip}
                   autoPlay={true}
