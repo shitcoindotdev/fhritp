@@ -4,12 +4,13 @@ import pumppill from './assets/logo.webp';
 import dude from './assets/inthapus.png';
 import videoClip from './assets/fhritp.mp4';
 import soundclip from './assets/fuck-her-right-in-the-pussy.mp3';
+import bgpfp from './assets/lowpfpf.jpg';
 
 function App() {
   const [isOpen, setIsopen] = useState(true);
 
   const bgImage = {
-    backgroundImage: `url(https://dhgf5mcbrms62.cloudfront.net/68923004/cover-dnRJaE/gbbGi96-200x200.webp)`,
+    backgroundImage: `url(${bgpfp})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: 'calc(100vh - 64px)',
