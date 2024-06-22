@@ -27,8 +27,8 @@ function App() {
 
   return (
     <>
-      <div className="relative w-full">
-        <header className="bg-[#191919] h-16 w-full px-4">
+      <div className="w-full">
+        <header className="bg-[#19191980] h-16 w-full px-4">
           <nav className="w-full flex items-center gap-4">
             <div>
               <img
@@ -48,8 +48,9 @@ function App() {
           </nav>
         </header>
         <main>
-          <section style={bgImage} className="">
-            <div className="flex pb-[15vh] px-4 bg-black/30  justify-end h-[100%] flex-col sm:items-center gap-4 w-full">
+          <section style={bgImage} className="relative">
+            <div className="absolute w-full h-full bg-black/40 z-20"></div>
+            <div className="flex relative z-30 sm:pb-[60px] pt-[30px] px-4 justify-end  flex-col sm:items-center gap-4 w-full">
               <h1 className="text-[32px] text-center text-white font-semibold italic">
                 "FUCK HER RIGHT IN THE PUSSY"
               </h1>
