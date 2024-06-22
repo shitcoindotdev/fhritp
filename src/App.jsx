@@ -42,7 +42,7 @@ function App() {
         <main>
           <section style={bgImage} className="relative min-h-dvh">
             <div className="absolute w-full h-full bg-black/40 z-20"></div>
-            <div className="flex relative z-30 sm:pb-[60px] pt-[30px] px-4 justify-end  flex-col sm:items-center gap-4 w-full">
+            <div className="flex relative z-30 sm:pb-[60px] pt-[30px] px-4 justify-end  flex-col items-center gap-4 w-full">
               <h1 className="text-[32px] text-center text-white font-semibold italic">
                 "FUCK HER RIGHT IN THE PUSSY"
               </h1>
