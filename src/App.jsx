@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Button from './components/Button';
 import pumppill from './assets/logo.webp';
 import dude from './assets/inthapus.png';
@@ -13,11 +13,12 @@ function App() {
     backgroundImage: `url(${bgpfp})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: 'calc(100vh - 64px)',
+    height: '100%',
   };
 
   const audioSrc = soundclip;
   const audioRef = useRef(null);
+  const videoRef = useRef(null);
 
   const handleClick = () => {
     if (audioRef.current) {
@@ -25,30 +26,21 @@ function App() {
     }
   };
 
+  const handleVideo = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  };
+
+  useEffect(() => {
+    handleVideo();
+  }, []);
+
   return (
     <>
       <div className="w-full">
-        <header className="bg-[#19191980] h-16 w-full px-4">
-          <nav className="w-full flex items-center gap-4">
-            <div>
-              <img
-                onClick={handleClick}
-                className="h-16 w-auto"
-                src={dude}
-                alt="Fuck her right in the pussy"
-              />
-              <audio ref={audioRef} src={audioSrc} />
-            </div>
-            <div>
-              <h1 className="text-white/80 font-semibold text-[24px]">
-                $FHRITP
-              </h1>
-            </div>
-            <ul></ul>
-          </nav>
-        </header>
         <main>
-          <section style={bgImage} className="relative">
+          <section style={bgImage} className="relative min-h-dvh">
             <div className="absolute w-full h-full bg-black/40 z-20"></div>
             <div className="flex relative z-30 sm:pb-[60px] pt-[30px] px-4 justify-end  flex-col sm:items-center gap-4 w-full">
               <h1 className="text-[32px] text-center text-white font-semibold italic">
@@ -59,10 +51,11 @@ function App() {
                 onClick={handleClick}
               >
                 <video
+                  ref={videoRef}
                   className="rounded-xl"
                   src={videoClip}
-                  autoPlay
-                  loop
+                  autoPlay={true}
+                  loop={true}
                   controls
                   muted={false}
                   playsInline
