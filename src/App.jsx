@@ -49,6 +49,9 @@ function App() {
         <main>
           <section style={bgImage} className="">
             <div className="flex pb-[15vh] px-4 bg-black/30  justify-end h-[100%] flex-col sm:items-center gap-4 w-full">
+              <h1 className="text-[32px] text-center text-white font-semibold italic">
+                "FUCK HER RIGHT IN THE PUSSY"
+              </h1>
               <div className="w-[100%] sm:max-w-[600px] lg:max-w-[800px]">
                 <video
                   className="rounded-xl"
@@ -61,7 +64,9 @@ function App() {
                   style={{ width: '100%', height: 'auto' }}
                 />
               </div>
-              <h1 className="text-[40px] text-white font-bold">$FHRITP</h1>
+              <h2 className="text-[40px] text-white font-bold mb-[-12px]">
+                $FHRITP
+              </h2>
               <p className="text-white/80 text-[10px] sm:text-[18px] font-semibold">
                 GjT8NHBxccbNPAAv3PzLo79R2PiaVwFqtZXkproCbs8J
               </p>
