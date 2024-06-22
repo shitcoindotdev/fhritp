@@ -5,6 +5,7 @@ import dude from './assets/inthapus.png';
 import videoClip from './assets/fhritp.mp4';
 import soundclip from './assets/fuck-her-right-in-the-pussy.mp3';
 import bgpfp from './assets/lowpfpf.jpg';
+import ZoomingElement from './components/ZoomingElement';
 
 function App() {
   const [isOpen, setIsopen] = useState(true);
@@ -29,7 +30,11 @@ function App() {
     <>
       <div className="w-full">
         <main>
-          <section style={bgImage} className="relative min-h-dvh">
+          <section
+            style={bgImage}
+            className="relative overflow-hidden flex items-center min-h-dvh"
+          >
+            <ZoomingElement imageSrc={dude} audioSrc={audioSrc} />
             <div className="absolute w-full h-full bg-black/40 z-20"></div>
             <div className="flex relative z-30 sm:pb-[60px] pt-[30px] px-4 justify-end  flex-col items-center gap-4 w-full">
               <h1 className="text-[32px] text-center text-white font-semibold italic">
