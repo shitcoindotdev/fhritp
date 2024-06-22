@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(254, 249, 236);
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s 0.25s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 0.98;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s 0.25s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    transform: translateX(0%);
+    opacity: 0.98;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+  list-style: none;
+}

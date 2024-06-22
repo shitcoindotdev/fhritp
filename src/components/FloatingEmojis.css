@@ -1,0 +1,16 @@
+/* src/FloatingEmojis.css */
+.emoji {
+  position: fixed;
+  top: -50px;
+  font-size: 2rem;
+  animation: float 5s linear infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
