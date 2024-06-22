@@ -52,7 +52,10 @@ function App() {
               <h1 className="text-[32px] text-center text-white font-semibold italic">
                 "FUCK HER RIGHT IN THE PUSSY"
               </h1>
-              <div className="w-[100%] sm:max-w-[600px] lg:max-w-[800px]">
+              <div
+                className="w-[100%] sm:max-w-[600px] lg:max-w-[800px]"
+                onClick={handleClick}
+              >
                 <video
                   className="rounded-xl"
                   src={videoClip}
@@ -67,11 +70,17 @@ function App() {
               <h2 className="text-[40px] text-white font-bold mb-[-12px]">
                 $FHRITP
               </h2>
-              <p className="text-white/80 text-[10px] sm:text-[18px] font-semibold">
+              <p
+                className="text-white/80 text-[10px] sm:text-[18px] font-semibold"
+                onClick={handleClick}
+              >
                 GjT8NHBxccbNPAAv3PzLo79R2PiaVwFqtZXkproCbs8J
               </p>
               <div>
-                <ul className="m-auto flex items-center xl:flex-row sm:gap-8 xl:gap-10 justify-start gap-4">
+                <ul
+                  className="m-auto flex items-center xl:flex-row sm:gap-8 xl:gap-10 justify-start gap-4"
+                  onClick={handleClick}
+                >
                   <li>
                     <a target="_blank" href="https://x.com/fhritp_cto">
                       <svg
@@ -152,7 +161,7 @@ function App() {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div onClick={handleClick}>
                 <Button
                   target="_blank"
                   text="Buy Merch"
